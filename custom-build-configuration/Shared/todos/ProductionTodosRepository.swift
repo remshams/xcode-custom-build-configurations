@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class TodosRepository {
+class ProductionTodosRepository {
   private static let todosPath = "todos"
   
   private let host: String
@@ -18,9 +18,9 @@ class TodosRepository {
   }
 }
 
-extension TodosRepository: ListTodos {
+extension ProductionTodosRepository: ListTodos {
   func list() -> AnyPublisher<[Todo], Error> {
-    URLSession.shared.dataTaskPublisher(for: URL(string: "host/\(TodosRepository.todosPath)")!)
+    URLSession.shared.dataTaskPublisher(for: URL(string: "\(host)/\(ProductionTodosRepository.todosPath)")!)
       .map(\.data)
       .decode(type: [TodoDto].self, decoder: JSONDecoder())
       .map { todoDtos in

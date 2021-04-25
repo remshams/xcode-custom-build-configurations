@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct custom_build_configurationApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  
+  let appContainer = AppContainer()
+  
+  
+  var body: some Scene {
+    WindowGroup {
+      TodosViewContainer().environmentObject(appContainer.makeTodosContainer())
     }
+  }
 }

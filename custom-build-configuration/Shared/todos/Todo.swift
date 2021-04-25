@@ -12,7 +12,7 @@ protocol ListTodos {
   func list() -> AnyPublisher<[Todo], Error>
 }
 
-struct Todo: Equatable {
+struct Todo: Identifiable, Equatable {
   let id: Int
   let title: String
   let completed: Bool

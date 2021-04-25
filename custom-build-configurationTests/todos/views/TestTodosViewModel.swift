@@ -18,7 +18,7 @@ class TestTodosViewModel: XCTestCase {
   override func setUp() {
     cancellabes = []
     todos = Todo.createFixtures(min: 2)
-    listTodo = InMemoryTodoRepository(todos: todos)
+    listTodo = InMemoryTodosRepository(todos: todos)
     model = TodosViewModel(listTodo: listTodo)
   }
   

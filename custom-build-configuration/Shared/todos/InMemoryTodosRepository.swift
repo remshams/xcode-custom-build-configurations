@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class InMemoryTodoRepository {
+class InMemoryTodosRepository {
   private var todos: [Todo]
   
   init(todos: [Todo] = []) {
@@ -16,7 +16,7 @@ class InMemoryTodoRepository {
   }
 }
 
-extension InMemoryTodoRepository: ListTodos {
+extension InMemoryTodosRepository: ListTodos {
   func list() -> AnyPublisher<[Todo], Error> {
     Just(todos).setFailureType(to: Error.self).eraseToAnyPublisher()
   }
