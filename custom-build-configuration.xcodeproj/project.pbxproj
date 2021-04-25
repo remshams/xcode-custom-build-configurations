@@ -95,7 +95,7 @@
 		4BF63BE02635778D0026E827 /* custom-build-configuration */ = {
 			isa = PBXGroup;
 			children = (
-				4BF63C2026357CBF0026E827 /* Shared */,
+				4BF63C34263586F50026E827 /* todos */,
 				4BF63BE12635778D0026E827 /* custom_build_configurationApp.swift */,
 				4BF63BE52635778F0026E827 /* Assets.xcassets */,
 				4BF63BEA2635778F0026E827 /* Info.plist */,
@@ -122,14 +122,6 @@
 				4BF63BF52635778F0026E827 /* Info.plist */,
 			);
 			path = "custom-build-configurationTests";
-			sourceTree = "<group>";
-		};
-		4BF63C2026357CBF0026E827 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				4BF63C34263586F50026E827 /* todos */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		4BF63C34263586F50026E827 /* todos */ = {
