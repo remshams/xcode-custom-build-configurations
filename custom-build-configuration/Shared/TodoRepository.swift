@@ -8,6 +8,24 @@
 import Foundation
 import Combine
 
-protocol ListTodo {
-  func list() -> AnyPublisher<[Todo], Error>
+class TodoRepository {
+  private static let todosPath = "todos"
+  
+  private let host: String
+  
+  init(host: String) {
+    self.host = host
+  }
+}
+
+extension TodoRepository: ListTodo {
+  func list() -> AnyPublisher<[Todo], Error> {
+    URLSession.shared.dataTaskPublisher(for: URL(string: "host/\(TodoRepository.todosPath)")!)
+      .map(\.data)
+      .decode(type: [TodoDto].self, decoder: JSONDecoder())
+      .map { todoDtos in
+        todoDtos.map { $0.convertToTodo() }
+      }
+      .eraseToAnyPublisher()
+  }
 }
