@@ -12,6 +12,7 @@
 		4BF63BE62635778F0026E827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF63BE52635778F0026E827 /* Assets.xcassets */; };
 		4BF63BE92635778F0026E827 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF63BE82635778F0026E827 /* Preview Assets.xcassets */; };
 		4BF63BF42635778F0026E827 /* custom_build_configurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF63BF32635778F0026E827 /* custom_build_configurationTests.swift */; };
+		4BF63C1D26357AF60026E827 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF63C1C26357AF60026E827 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		4BF63BEF2635778F0026E827 /* custom-build-configurationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "custom-build-configurationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF63BF32635778F0026E827 /* custom_build_configurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom_build_configurationTests.swift; sourceTree = "<group>"; };
 		4BF63BF52635778F0026E827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BF63C1C26357AF60026E827 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				4BF63BE52635778F0026E827 /* Assets.xcassets */,
 				4BF63BEA2635778F0026E827 /* Info.plist */,
 				4BF63BE72635778F0026E827 /* Preview Content */,
+				4BF63C1C26357AF60026E827 /* Configuration.swift */,
 			);
 			path = "custom-build-configuration";
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BF63C1D26357AF60026E827 /* Configuration.swift in Sources */,
 				4BF63BE42635778D0026E827 /* ContentView.swift in Sources */,
 				4BF63BE22635778D0026E827 /* custom_build_configurationApp.swift in Sources */,
 			);
