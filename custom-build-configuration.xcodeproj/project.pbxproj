@@ -13,6 +13,9 @@
 		4BF63BE92635778F0026E827 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF63BE82635778F0026E827 /* Preview Assets.xcassets */; };
 		4BF63BF42635778F0026E827 /* custom_build_configurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF63BF32635778F0026E827 /* custom_build_configurationTests.swift */; };
 		4BF63C1D26357AF60026E827 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF63C1C26357AF60026E827 /* Configuration.swift */; };
+		4BF63C2326357D000026E827 /* TodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF63C2226357D000026E827 /* TodoRepository.swift */; };
+		4BF63C2926357D1A0026E827 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF63C2826357D1A0026E827 /* Todo.swift */; };
+		4BF63C2D26357DD80026E827 /* InMemoryTodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF63C2C26357DD80026E827 /* InMemoryTodoRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		4BF63BF32635778F0026E827 /* custom_build_configurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom_build_configurationTests.swift; sourceTree = "<group>"; };
 		4BF63BF52635778F0026E827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BF63C1C26357AF60026E827 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		4BF63C2226357D000026E827 /* TodoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepository.swift; sourceTree = "<group>"; };
+		4BF63C2826357D1A0026E827 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		4BF63C2C26357DD80026E827 /* InMemoryTodoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryTodoRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		4BF63BE02635778D0026E827 /* custom-build-configuration */ = {
 			isa = PBXGroup;
 			children = (
+				4BF63C2026357CBF0026E827 /* Shared */,
 				4BF63BE12635778D0026E827 /* custom_build_configurationApp.swift */,
 				4BF63BE32635778D0026E827 /* ContentView.swift */,
 				4BF63BE52635778F0026E827 /* Assets.xcassets */,
@@ -102,6 +109,16 @@
 				4BF63BF52635778F0026E827 /* Info.plist */,
 			);
 			path = "custom-build-configurationTests";
+			sourceTree = "<group>";
+		};
+		4BF63C2026357CBF0026E827 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4BF63C2226357D000026E827 /* TodoRepository.swift */,
+				4BF63C2826357D1A0026E827 /* Todo.swift */,
+				4BF63C2C26357DD80026E827 /* InMemoryTodoRepository.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,8 +221,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF63C1D26357AF60026E827 /* Configuration.swift in Sources */,
+				4BF63C2326357D000026E827 /* TodoRepository.swift in Sources */,
 				4BF63BE42635778D0026E827 /* ContentView.swift in Sources */,
+				4BF63C2D26357DD80026E827 /* InMemoryTodoRepository.swift in Sources */,
 				4BF63BE22635778D0026E827 /* custom_build_configurationApp.swift in Sources */,
+				4BF63C2926357D1A0026E827 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
