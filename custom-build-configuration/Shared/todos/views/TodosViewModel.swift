@@ -10,12 +10,12 @@ import Combine
 
 
 class TodosViewModel: ObservableObject {
-  private let listTodo: ListTodo
+  private let listTodo: ListTodos
   private var cancellabes: Set<AnyCancellable> = []
   
   @Published var todos: [Todo] = []
   
-  init(listTodo: ListTodo) {
+  init(listTodo: ListTodos) {
     self.listTodo = listTodo
   }
   

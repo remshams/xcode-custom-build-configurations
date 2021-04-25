@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-protocol ListTodo {
+protocol ListTodos {
   func list() -> AnyPublisher<[Todo], Error>
 }
 

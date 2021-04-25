@@ -12,7 +12,7 @@ import Combine
 class TestTodosViewModel: XCTestCase {
   var cancellabes: Set<AnyCancellable>!
   var todos: [Todo]!
-  var listTodo: ListTodo!
+  var listTodo: ListTodos!
   var model: TodosViewModel!
   
   override func setUp() {

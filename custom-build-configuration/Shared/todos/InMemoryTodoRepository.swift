@@ -16,7 +16,7 @@ class InMemoryTodoRepository {
   }
 }
 
-extension InMemoryTodoRepository: ListTodo {
+extension InMemoryTodoRepository: ListTodos {
   func list() -> AnyPublisher<[Todo], Error> {
     Just(todos).setFailureType(to: Error.self).eraseToAnyPublisher()
   }
