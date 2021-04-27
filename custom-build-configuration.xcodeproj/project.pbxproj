@@ -10,7 +10,6 @@
 		4BF63BE22635778D0026E827 /* custom_build_configurationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF63BE12635778D0026E827 /* custom_build_configurationApp.swift */; };
 		4BF63BE62635778F0026E827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF63BE52635778F0026E827 /* Assets.xcassets */; };
 		4BF63BE92635778F0026E827 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF63BE82635778F0026E827 /* Preview Assets.xcassets */; };
-		4BF63BF42635778F0026E827 /* custom_build_configurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF63BF32635778F0026E827 /* custom_build_configurationTests.swift */; };
 		4BF63C1D26357AF60026E827 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF63C1C26357AF60026E827 /* Configuration.swift */; };
 		4BF63C2326357D000026E827 /* ProductionTodosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF63C2226357D000026E827 /* ProductionTodosRepository.swift */; };
 		4BF63C2926357D1A0026E827 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF63C2826357D1A0026E827 /* Todo.swift */; };
@@ -41,7 +40,6 @@
 		4BF63BE82635778F0026E827 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4BF63BEA2635778F0026E827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BF63BEF2635778F0026E827 /* custom-build-configurationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "custom-build-configurationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BF63BF32635778F0026E827 /* custom_build_configurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom_build_configurationTests.swift; sourceTree = "<group>"; };
 		4BF63BF52635778F0026E827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BF63C1C26357AF60026E827 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		4BF63C2226357D000026E827 /* ProductionTodosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionTodosRepository.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				4BF63C3C263588A50026E827 /* todos */,
-				4BF63BF32635778F0026E827 /* custom_build_configurationTests.swift */,
 				4BF63BF52635778F0026E827 /* Info.plist */,
 			);
 			path = "custom-build-configurationTests";
@@ -281,7 +278,6 @@
 			files = (
 				4BF63C4526358FCE0026E827 /* TodosFixture.swift in Sources */,
 				4BF63C3F263588D00026E827 /* TestTodosViewModel.swift in Sources */,
-				4BF63BF42635778F0026E827 /* custom_build_configurationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
