@@ -6,7 +6,7 @@
 //
 import Foundation
 
-enum ApplicationMode {
+enum ApplicationMode: String {
   case release
   case test
   case debug

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import OSLog
 
 protocol TodosRepository: ListTodos {}
 
@@ -16,6 +17,7 @@ class AppContainer: ObservableObject {
   init() {
     todosRepository = AppContainer.makeTodosRepository()
     todosContainer = AppContainer.makeTodosContainer(listTodos: todosRepository)
+    Logger().debug("Application running in mode: \(mode.rawValue)")
   }
   
   func makeTodosContainer() -> TodosContainer {
